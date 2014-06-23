@@ -53,21 +53,21 @@
 	<array>
 		<dict>
 			<key>Bounds</key>
-			<string>{{25.019774897169555, 169.37537375586027}, {462.98025512695312, 15}}</string>
+			<string>{{24.997879028320312, 168}, {473.00424194335938, 40}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>ID</key>
-			<integer>35</integer>
+			<integer>37</integer>
 			<key>Rotation</key>
-			<real>0.030846057459712029</real>
+			<real>359.75772094726562</real>
 			<key>Shape</key>
 			<string>AdjustableArrow</string>
 			<key>ShapeData</key>
 			<dict>
 				<key>ratio</key>
-				<real>0.32189163565635681</real>
+				<real>0.50000017881393433</real>
 				<key>width</key>
-				<real>14.973806381225586</real>
+				<real>20.000001907348633</real>
 			</dict>
 			<key>Style</key>
 			<dict>
@@ -75,17 +75,28 @@
 				<dict>
 					<key>Color</key>
 					<dict>
-						<key>a</key>
-						<string>0.1</string>
 						<key>b</key>
-						<string>0</string>
+						<string>0.4</string>
 						<key>g</key>
-						<string>0</string>
+						<string>1</string>
 						<key>r</key>
-						<string>0</string>
+						<string>1</string>
+					</dict>
+					<key>FillType</key>
+					<integer>2</integer>
+					<key>GradientAngle</key>
+					<real>90</real>
+					<key>GradientColor</key>
+					<dict>
+						<key>b</key>
+						<string>0.4</string>
+						<key>g</key>
+						<string>0.8</string>
+						<key>r</key>
+						<string>1</string>
 					</dict>
 					<key>MiddleFraction</key>
-					<real>0.70634919404983521</real>
+					<real>0.4523809552192688</real>
 				</dict>
 				<key>shadow</key>
 				<dict>
@@ -100,8 +111,6 @@
 						<key>r</key>
 						<string>0</string>
 					</dict>
-					<key>Fuzziness</key>
-					<real>0.0</real>
 					<key>ShadowVector</key>
 					<string>{0, 2}</string>
 				</dict>
@@ -109,14 +118,12 @@
 				<dict>
 					<key>Color</key>
 					<dict>
-						<key>a</key>
-						<string>0.75</string>
 						<key>b</key>
 						<string>0</string>
 						<key>g</key>
-						<string>0</string>
+						<string>0.4822</string>
 						<key>r</key>
-						<string>0</string>
+						<string>0.910613</string>
 					</dict>
 				</dict>
 			</dict>
@@ -128,9 +135,7 @@
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
 
-\f0\fs24 \cf0 \
-\
-Time}</string>
+\f0\b\fs24 \cf0 TIME}</string>
 			</dict>
 			<key>TextRelativeArea</key>
 			<string>{{0.125, 0.25}, {0.75, 0.5}}</string>
@@ -453,7 +458,7 @@ Time}</string>
 	<key>MasterSheets</key>
 	<array/>
 	<key>ModificationDate</key>
-	<string>2014-06-22 04:56:20 +0000</string>
+	<string>2014-06-23 18:03:07 +0000</string>
 	<key>Modifier</key>
 	<string>Adam Jacob</string>
 	<key>NotesVisible</key>
@@ -534,7 +539,7 @@ Time}</string>
 			</dict>
 		</array>
 		<key>Frame</key>
-		<string>{{705, 206}, {710, 872}}</string>
+		<string>{{705, 560}, {710, 618}}</string>
 		<key>ListView</key>
 		<true/>
 		<key>OutlineWidth</key>
@@ -548,7 +553,7 @@ Time}</string>
 		<key>SidebarWidth</key>
 		<integer>120</integer>
 		<key>VisibleRegion</key>
-		<string>{{0, 0}, {575, 733}}</string>
+		<string>{{0, 0}, {561, 464}}</string>
 		<key>Zoom</key>
 		<real>1</real>
 		<key>ZoomValues</key>
