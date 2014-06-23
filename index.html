@@ -34,6 +34,15 @@
     <!--[if lt IE 9]>
     <script src="lib/js/html5shiv.js"></script>
     <![endif]-->
+
+    <style>
+      span .green {
+        color: #b3e2cd;
+      }
+      span .orange {
+        color: #fbcdac;
+      }
+    </style>
   </head>
 
   <body>
@@ -53,12 +62,10 @@
               <img alt="chef logo" src="/images/chef-logo.svg" style="background: none; border: none; vertical-align:middle; outline: none;"/>
             </a>
             </p>
-            <p>
             <small>
               <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
               <p><a href="http://github.com/adamhjk/good-at-ops">Fork This Presentation on Github</a></p>
             </small>
-            </p>
           </section>
 
           <section>
@@ -88,9 +95,7 @@
             <h3>By which we mean <i>technical</i> operations</h3>
             <blockquote>
               The work of building and maintaining computer systems, networks, and applications.
-              <br> - Adam Jacob, I think </br>
             </blockquote>
-            Everyone here is in Operations, most likely.
           </section>
 
           <section>
@@ -115,16 +120,16 @@
             <section>
               <h1>Learn to Type</h1>
               <p>Literally everything we do is typing.</p>
-                <pre><code>
+                <pre><code class="erlang">
                     -module(productivity).
                     -export([evaluate/2]).
 
                     evaluate(Me, You) ->
                       Me / You.
 
-                    # Call me!
+                    % Call me!
                     productivity:evaluate(120, 30).
-                    4.0
+                    > 4.0
                   </code>
                 </pre>
             </section>
@@ -143,11 +148,25 @@
               </ol>
               <img src="/images/editor.png" width=600 alt="editor"/>
             </section>
-
             <section>
-              <h1>Surprised?</h1>
-              <p>If so, your next step after this talk is to educate yourself on these topics.</p>
-              <p>It's worth a refresher, even if you know the details.</p>
+              <h1>Know your purpose</h1>
+              <ol>
+                <li> What is the mission? </li>
+                <li> How does your organization intend to fulfill it? </li>
+                <li> How do you contribute? </li>
+                <li> What are the stakes? </li>
+              </ol>
+            </section>
+            <section>
+              <h1>Know the people</h1>
+              <ol>
+                <li> Software Developers </li>
+                <li> Business Decision Makers </li>
+                <li> Systems and Network Administrators </li>
+                <li> Marketing and PR </li>
+                <li> Sales </li>
+                <li> Legal </li>
+              </ol>
             </section>
           </section>
 
@@ -164,16 +183,238 @@
               <hr/>
               <h1>Efficiency</h1>
               <p>
-              Make the day-to-day effort of operations <span style="color:#00FF00">easier</span>.
+              Make the effort required to do work <span style="color:#00FF00">easier</span>.
               </p>
             </section>
-            <section>
-              <img src="/images/availability-efficiency.svg" alt="cycle" width="100%"/>
-              </section>
             <section>
             <h1>Focus on Availability</h1>
             <hr/>
             <h1>Efficiency Follows</h1>
+            </section>
+            <section>
+              <table>
+                <tr>
+                  <td>
+                    <h2>Availability</h2>
+                    <ul>
+                      <li>Monitoring</li>
+                      <li>Trending</li>
+                      <li>Capacity Planning</li>
+                      <li>Troubleshooting</li>
+                      <li>Incident Management</li>
+                      <li>Post Mortems</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <h2>Efficiency</h2>
+                    <ul>
+                      <li>Source Control</li>
+                      <li>Systems Design</li>
+                      <li>Configuration Management</li>
+                      <li>Software Development</li>
+                      <li>Software Testing</li>
+                      <li>Software Development Life cycles</li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+            </section>
+          </section>
+
+          <section>
+            <section>
+              <h1>Availability</h1>
+              $$Availability = \frac{Uptime}{(Uptime + Downtime)}$$
+              <small>
+                Much thanks to <a href="http://twitter.com/postwait">Theo Schlossnagle</a>, <a href="http://twitter.com/allspaw">John Allspaw</a>, <a href="http://twitter.com/patrickdebois">Patrick Debois</a>, and others for informing
+                much of this section.
+              </small>
+            </section>
+            <section>
+              <h1>The 9's</h1>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Availability</th>
+                    <th>Downtime per month</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>90% (one nine)</td>
+                    <td>72 hours</td>
+                  </tr>
+                  <tr>
+                    <td>99% (two nines)</td>
+                    <td>7.2 hours</td>
+                  </tr>
+                  <tr>
+                    <td>99.9% (three nines)</td>
+                    <td>43.8 minutes</td>
+                  </tr>
+                  <tr>
+                    <td>99.99% (four nines)</td>
+                    <td>4.32 minutes</td>
+                  </tr>
+                  <tr>
+                    <td>99.999% (fixe nines)</td>
+                    <td>25.9 seconds</td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+            <section>
+              <h1>The M's</h1>
+              <ul>
+                <li><span class="fragment highlight-current-green">Mean Time To Failure (MTTF)</span>
+                <br>The average time there is correct behavior</br></li>
+                <li><span class="fragment highlight-current-green">Mean Time To Diagnose (MTTD)</span>
+                  <br>The average time it takes to diagnose the problem</br>
+                </li>
+                <li><span class="fragment highlight-current-green">Mean Time To Repair (MTTR)</span>
+                <br>The average time it takes to fix a problem</br>
+                </li>
+                <li><span class="fragment highlight-current-green">Mean Time Between Failures (MTBF)</span>
+                <br>The average time between different failures</br></li>
+              </ul>
+              <img src="images/the_m_s.svg" alt="The M*s"/>
+            </section>
+            <section>
+              <h1>Focus your efforts</h1>
+              <p>
+                On reducing <span style="color:#fdae6b">Mean Time to Diagnose</span> and <span style="color:#fdae6b">Mean Time to Repair</span>.
+              </p>
+              <p>
+                Failure is <span style="color:#f03b20">inevitable</span> - it's how you detect and react that matter most to availability.
+              </p>
+            </section>
+            <section>
+              <h1>Diagnose</h1>
+              <h3>Metrics Collection</h3>
+              <p>Collect metrics from the <span style="color:#b3e2cd">operating system</span>, 
+              <span style="color:#fdcdac">network</span>, and <span style="color:#cbd5e8">applications</span>.</p>
+              <p>High <span style="color:#fdae6b">resolution matters</span>!</p>
+              <p>As few systems as possible.</p>
+              </section>
+            <section>
+              <h1>Diagnose</h1>
+              <h3>Two Critical Metrics</h3>
+              <ol>
+                <li> <span style="color:#fbcdac">Is it up</span> - from a users perspective </li>
+                <li> <span style="color:#b3e2cd">It it making money</span> </li>
+              </ol>
+            </section>
+
+            <section>
+              <h1>Diagnose</h1>
+              <h3>Graphing, Trends and Analysis</h3>
+              <p>Use graphs to understand normal behavior.</p>
+              <p><img src="images/boringtrend.png" alt="boring trend"></p>
+              <p>
+              <small>
+                <a href="http://omniti.com/seeds/dissecting-todays-internet-traffic-spikes">Graphs taken from Theo Schlossnagle and OmniTI</a>
+              </small>
+              </p>
+            </section>
+            <section>
+              <h1>Diagnose</h1>
+              <h3>Graphing, Trends and Analysis</h3>
+              <p>Use graphs to understand abnormal behavior.</p>
+              <p><img src="images/spikesdissected.png" alt="spikes dissected"></p>
+              <p><small>
+                <a href="http://omniti.com/seeds/dissecting-todays-internet-traffic-spikes">Graphs taken from Theo Schlossnagle and OmniTI</a>
+              </small>
+              </p>
+            </section>
+            <section>
+              <h1>Diagnose</h1>
+              <h3>Alerts</h3>
+              <p>Get the attention of the right humans.</p>
+              <ul>
+                <li>As <span style="color:#b3e2cd;" class="green">few alerts as possible</span></li>
+                <li>Routed to the <span style="color:#fbcdac;" class="orange">people who can take action</span></li>
+                <li>Start with the <b>is it up</b> alert</li>
+                <li>Never create an alert that isn't actionable!</li>
+              </ul>
+            </section>
+            <section>
+              <h1>Repair</h1>
+              <h3>Incident Response</h3>
+              <p>First Response</p>
+              <p>
+              <img src="images/ooda.svg" alt="ooda"/>
+              </p>
+            </section>
+            <section>
+              <h1>Repair</h1>
+              <h3>Incident Command</h3>
+              <p>
+              The First Responder is the default <span style="color:#b3e2cd;">Incident Commander</span>
+              </p>
+              <ol>
+                <li> Decides what to do next </li>
+                <li> Coordinates resources </li>
+                <li> Can hand off command </li>
+                <li> Communicates status </li>
+                <li> Not about <i><b>rank</b></i></li>
+              </ol>
+              <p>
+              There is only <span style="color:#fbcdac;">ONE</span> Incident Commander.
+              </p>
+              <p>
+                <small>
+                  This isn't always true in real Incident Command, but go with it.
+                </small>
+              </p>
+            </section>
+            <section>
+              <h1>Learn</h1>
+              <h3>Post Mortem</h3>
+              <p>
+                Incident Commander schedules a post mortem within 24 hours of incident resolution.
+              </p>
+              <p>
+                  Purpose is to <span style="color:#b3e2cd;">learn from the incident</span>, and
+                  and <span style="color:#fbcdac;">identify the work</span> needed to:
+                  </p>
+                  <ul>
+                    <li> Prevent recurrence (if necessary)</li>
+                    <li> Improve Mean Time To Diagnose </li>
+                    <li> Improve Mean Time To Repair </li>
+                  </ul>
+            </section>
+            <section>
+              <h1>Learn</h1>
+              <h3>How to run a Post Mortem</h3>
+              <ol>
+                <li> Invoke the space: we are here to learn, not to blame </li>
+                <li> Describe the incident </li>
+                <li> Determine root cause </li>
+                <li> Establish the timeline </li>
+                <li> Describe customer impact </li>
+                <li> Describe remediation tasks for the root cause</li>
+                <li> Describe improvement tasks for response process</li>
+              </ol>
+            </section>
+            <section>
+            <blockquote>
+              Progress on safety coincides with learning from failure. <span style="color:#b3e2cd;">This makes punishment
+and learning two mutually exclusive activities: Organizations can either learn
+from an accident or punish the individuals involved in it, but hardly do both
+at the same time.</span> The reason is that punishment of individuals can protect
+false beliefs about basically safe systems, where humans are the least reliable
+components. Learning challenges and potentially changes the belief about what
+creates safety. Moreover, <span style="color:#fbcdac;">punishment emphasizes that failures are deviant, that
+  they do not naturally belong in the organization</span>...</blockquote>
+<small>Sidney W.A. Dekker, Ten Questions about Human Error: A New View of Human Factors and System Safety (Human Factors in Transportation)</small>
+            </section>
+          </section>
+          <section>
+            <section>
+              <h1>Efficiency</h1>
+            </section>
+            <section>
+              <h1>Source Control</h1>
             </section>
           </section>
       </div>
@@ -195,6 +436,10 @@
 
         theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
         transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+        math: {
+          mathjax: 'http://cdn.mathjax.org/mathjax/latest/MathJax.js',
+          config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+        },
 
         // Parallax scrolling
         // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
@@ -207,7 +452,8 @@
           { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
           { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
           { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-          { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+          { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'plugin/math/math.js', async: true }
         ]
       });
 
