@@ -16,6 +16,7 @@
 
     <link rel="stylesheet" href="css/reveal.min.css">
     <link rel="stylesheet" href="css/theme/default.css" id="theme">
+    <link rel="stylesheet" href="css/logo.css">
 
     <!-- For syntax highlighting -->
     <link rel="stylesheet" href="lib/css/zenburn.css">
@@ -57,13 +58,12 @@
             /
             <a href="http://twitter.com/adamhjk">@adamhjk</a>
             </p>
-            <p>
             <a href="http://getchef.com">
               <img alt="chef logo" src="images/chef-logo.svg" style="background: none; border: none; vertical-align:middle; outline: none;"/>
             </a>
-            </p>
-            <small>
-              <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+            <p>
+            <small><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+              <br/>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
               <p><a href="http://github.com/adamhjk/good-at-ops">Fork This Presentation on Github</a></p>
             </small>
           </section>
@@ -78,26 +78,60 @@
               "the author provides a survey of the relevant literature"
             </blockquote>
             <img src="images/survey.jpg" alt="survey manhole" width="400"/>
+            </section>
+
+          <section>
+            <h1>How to be good at Operations</h1>
+            <p>Focus on improving <span style="color:#7fc97f">availability</span> through reducing MTTD, MTTR and MTBF.</p>
+            <p>Improve the organizations <span style="color:#fdc086">efficiency</span> through improvements in People, Process and Technology</p>
+            <p>Design to improve the <span style="color:#a6cee3">safety</span>, <span style="color:#fb9a99">contentment</span>, <span style="color:#ffff99">knowledge</span> and <span style="color:#cab2d6">freedom</span> of your colleagues and users</p>
           </section>
 
           <section>
-            <h1>Who are you?</h1>
-            <ul>
-              <li> Systems Administrators </li>
-              <li> Software Developers </li>
-              <li> Lost Web Performance Gurus </li>
-              <li> Executives </li>
-            </ul>
+            <section>
+              <h1>What is Operations?</h1>
+              <h3>By which we mean <i>technical</i> operations</h3>
+              <blockquote>
+                The work of building and maintaining computer systems, networks, and applications.
+              </blockquote>
+            </section>
+            <section>
+            <h2>Done well, Operations enhances the <span style="color:#7fc97f">safety</span>, <span style="color:#beaed4">contentment</span>, <span style="color:#fdc086">knowledge</span> and <span style="color:#ffff99">freedom</span> of both the authors and users of the system.</h2>
+            </section>
+            <section>
+              <h1>Safety</h1>
+              <ul>
+                <li>Human safety</li>
+                <li>Information safety</li>
+                <li>Availability of the system as a possible link to both</li>
+                <li>The ability for individuals to act without fear of unintended consequences</li>
+              </ul>
+              <small>Safety is a slider – different systems have different thresholds</small>
+            </section>
+            <section>
+              <h1>Contentment</h1>
+              <p>Contentment is about being satisfied with what you have.</p>
+              <p>The state of our systems is often a source of deep discontent :)</p>
+              <p>It may not make you happier – but it won’t hurt</p>
+              <blockquote>
+                Happiness is not a goal – it’s a by-product of a life well lived
+                <br/>- Eleanor Roosevelt
+              </blockquote>
+            </section>
+            <section>
+              <h1>Knowledge</h1>
+              <p>Access to knowledge is a leading indicator of social progress.</p>
+              <p>We should be making it easier to understand what the system is for, why we need it, and what good outcomes are.</p>
+              <p>The goal isn’t to minimize needed knowledge – its to provide access to the wealth of it, when we need it.</p>
+            </section>
+            <section>
+              <h1>Freedom</h1>
+              <blockquote>
+                The power or right to act, speak, or think as one wants without hindrance or restraint.<br/> – The Internet
+              </blockquote>
+              <p>We should be empowering ourselves and others to act, speak, and think as they need to with less hindrance.</p>
+            </section>
           </section>
-
-          <section>
-            <h1>What is Operations?</h1>
-            <h3>By which we mean <i>technical</i> operations</h3>
-            <blockquote>
-              The work of building and maintaining computer systems, networks, and applications.
-            </blockquote>
-          </section>
-
           <section>
             <section>
               <img src="images/this_tall.jpg" alt="Prerequisites" width="100%"/>
@@ -169,7 +203,6 @@
               </ol>
             </section>
           </section>
-
           <section>
             <section data-background="/images/operations.png">
               <h1>Being good at Operations</h1>
@@ -448,7 +481,24 @@ creates safety. Moreover, <span style="color:#fbcdac;">punishment emphasizes tha
               </p>
             </section>
             <section>
-            <img src="images/ppt.svg" alt="People + Process + Technology"/>
+            <h1>People</h1>
+            <hr/>
+            <h1>Process</h1>
+            <hr/>
+            <h1>Technology</h1>
+            </section>
+            <section>
+            <h1>People are #1</h1>
+            <blockquote>
+            When they create electronic devices, they can reflect on
+            whether that new product will take people away from themselves,
+            their family and nature. Instead they can create the kind of
+            devices and software that can help them go back to themselves, to
+            take care of their feelings. By doing that, they will feel good
+            because they’re doing something good for society.
+            <br/>
+            - Thich Naht Hanh at Google
+          </blockquote>
             </section>
             <section>
               <h1>People</h1>
@@ -543,20 +593,19 @@ creates safety. Moreover, <span style="color:#fbcdac;">punishment emphasizes tha
             </section>
             <section>
               <h1>Technology</h1>
-              <h2>Fix the kit</h2>
-            </section>
-            <section>
-              <h1>Systems Design</h1>
-              <h2>Understand the requirements</h2>
+              <h2>Systems Design</h2>
+              <h3>Understand the requirements</h3>
               <p>
               <img src="images/org_sucks.png" height="300" alt="This Org Sucks"/>
               </p>
               Do not mistake existing implementations for hard requirements
             </section>
             <section>
-              <h1>Scalable Systems Design</h1>
-              <h2>People</h2>
-              <h2>Systems</h2>
+            <h1>Scalable Systems Design</h1>
+            <p>$$People + Systems$$</p>
+            <p>Complexity: something is complex when it has many parts</p>
+            <p>Complicated: something is complicated when it has a high degree of difficulty</p>
+            <p>Often we can reduce complication, but not complexity</p>
             </section>
             <section>
               <h1>Rolling Upgrade</h1>
@@ -598,6 +647,71 @@ creates safety. Moreover, <span style="color:#fbcdac;">punishment emphasizes tha
                 <li>Update software on App1</li>
               </ol>
             </section>
+            <section>
+              <h1>Complexity/Complicated</h1>
+              <p>The better solution is less <span style="color:#7fc97f">complicated</span>.</p>
+              <p>It has the same inherit <span style="color:#beaed4">complexity</span>.</p>
+            </section>
+            <section>
+            <h1>It also improves</h1>
+            <h3>Safety</h3>
+            Resilient against many more failure modes
+            <hr/>
+            <h3>Knowledge</h3>
+            Far easier to reason about during Orient in the OODA loop
+            <hr/>
+            <h3>Freedom</h3>
+            Pattern adapts to different values of "available" based on service needs
+            <hr/>
+            <h3>Contentment</h3>
+            Safer, easier to reason about, and more flexible - that makes everyone content
+            </section>
+            <section>
+              <h1>Efficiency Roundup</h1>
+              <ul>
+                <li>Greatest gains are in improving People</li>
+                <li>Continually improve process, be willing to redesign in the face of new challenges</li>
+                <li>Use Scalable Systems Design to improve your technology and automation</li>
+              </ul>
+            </section>
+
+          </section>
+
+          <section>
+            <h1>How to be good at Operations</h1>
+            <p>Focus on improving <span style="color:#7fc97f">availability</span> through reducing MTTD, MTTR and MTBF.</p>
+            <p>Improve the organizations <span style="color:#fdc086">efficiency</span> through improvements in People, Process and Technology</p>
+            <p>Design to improve the <span style="color:#a6cee3">safety</span>, <span style="color:#fb9a99">contentment</span>, <span style="color:#ffff99">knowledge</span> and <span style="color:#cab2d6">freedom</span> of your colleagues and users</p>
+          </section>
+
+          <section>
+              <svg viewBox="-200 -200 400 400" width="300" height="300" xmlns="http://www.w3.org/2000/svg" class="logo logo-animate">
+     <g display="inline" class="ring ring-odd ring-3">
+      <title>ring-3</title>
+      <path id="svg_6" d="m-159.0006,47.62601c-0.5723,-1.87601 -1.1114,-3.76001 -1.61731,-5.67001c-0.0265,-0.11899 -0.05989,-0.23299 -0.0865,-0.35199c-0.46581,-1.76401 -0.89828,-3.528 -1.3042,-5.311c-0.08,-0.366 -0.1532,-0.726 -0.2397,-1.08501c-0.3394,-1.53099 -0.6588,-3.06799 -0.95169,-4.612c-0.1331,-0.67899 -0.24611,-1.37099 -0.3727,-2.04999c-0.2128,-1.244 -0.4259,-2.46901 -0.6255,-3.70601c-0.1597,-1.052 -0.2995,-2.11699 -0.43932,-3.181c-0.97159,-7.228 -1.49728,-14.56799 -1.49069,-22.022l-33.8606,0c-0.01318,8.11301 0.49918,16.132 1.45073,24.03801l0,0c0.0201,0.166 0.04665,0.339 0.07326,0.51199c0.26628,2.15001 0.55896,4.3 0.89851,6.436c0.09302,0.592 0.19963,1.17799 0.29268,1.763c0.28615,1.757 0.59242,3.50099 0.93176,5.245c0.17303,0.931 0.37941,1.85001 0.56561,2.76801c0.28616,1.39099 0.57906,2.77499 0.8985,4.153c0.27951,1.211 0.57904,2.416 0.88512,3.62c0.27292,1.07201 0.53897,2.15601 0.82515,3.228c0.38612,1.42401 0.79208,2.83501 1.20456,4.246c0.17303,0.599 0.32616,1.198 0.50591,1.77701l0.01991,0c2.3425,7.73898 5.1111,15.28601 8.3253,22.60001l31.0392,-13.64902c-2.6821,-6.06299 -4.9848,-12.32599 -6.92799,-18.74799l0,0z" class="dark" fill="#F38B00"/>
+      <path class="dark" id="svg_7" d="m-0.332,165.44699c-45.70599,0 -87.141,-18.61398 -117.1613,-48.642l-23.9912,23.992c36.13,36.13 86.02249,58.504 141.1525,58.504c101.815,0 185.815,-76.21298 198.10001,-174.70099l-34.18701,0c-12.07199,79.62698 -80.978,140.84698 -163.91299,140.84698z" fill="#F38B00"/>
+      <path class="dark" id="svg_8" d="m-0.332,-166.146c37.13499,0 71.44199,12.27849 99.11301,32.9823l20.29199,-27.1924c-33.302,-24.89641 -74.623,-39.64391 -119.39799,-39.64391c-84.718,0 -157.1051,52.77429 -186.09419,127.237l31.5981,12.29201c24.10429,-61.7785 84.25909,-105.675 154.48909,-105.675z" fill="#F38B00"/>
+      <path id="svg_9" d="m163.57501,-25.299l34.18597,0c-3.66699,-29.382 -13.71597,-56.78101 -28.70898,-80.7655l-28.78299,17.9615c11.746,18.761 19.858,40.024 23.306,62.804z" fill="#FFFFFF"/>
+     </g>
+     <g display="inline" class="ring ring-even ring-2">
+      <title>ring-2</title>
+      <path class="dark" id="svg_10" d="m125.06866,-25.29926l34.29993,0c-8.95764,-57.50595 -48.33536,-105.05605 -101.10297,-125.65996l-12.25186,31.49818c40.14304,15.66591 70.4899,51.02397 79.0549,94.16177z" fill="#F38B00"/>
+      <path id="svg_13" d="m-0.33176,127.50653l0,33.77417c80.63214,0 147.66809,-59.35608 159.707,-136.67401l-34.29993,0c-11.64627,58.60403 -63.44888,102.89984 -125.40707,102.89984z" fill="#FFFFFF"/>
+      <path id="svg_12" d="m-128.19452,-0.34961l0,0l-33.77434,0l0,0c0,67.92108 42.12637,126.15909 101.60889,150.03726l12.53804,-31.34509c-47.05094,-18.89362 -80.37259,-64.95958 -80.37259,-118.69217z" fill="#FFFFFF"/>
+      <path id="svg_11" d="m-0.33176,-128.20572l0,0l0,-33.7742c0,0 0,0 0,0c-68.46011,0 -127.10408,42.79174 -150.62285,103.02628l31.4715,12.24522c18.60076,-47.65655 64.99286,-81.4973 119.15135,-81.4973z" fill="#FFFFFF"/>
+     </g>
+     <g display="inline" class="ring ring-odd ring-1">
+      <title>ring-1</title>
+      <path id="svg_1" d="m-0.33176,89.57959c-49.5865,0 -89.92253,-40.3427 -89.92253,-89.9292c0,-49.5865 40.34268,-89.92253 89.92253,-89.92253c40.92169,0 75.52774,27.4852 86.37543,64.96623l34.79904,0c-11.56641,-56.2881 -61.50562,-98.74708 -121.1678,-98.74708c-68.20724,0 -123.69674,55.48949 -123.69674,123.69672s55.48949,123.7034 123.69674,123.7034c59.66219,0 109.60139,-42.45898 121.1678,-98.7471l-34.79904,0c-10.85434,37.4877 -45.45374,64.97955 -86.37543,64.97955z" fill="#FFFFFF"/>
+     </g>
+     <g display="inline" class="ring ring-even ring-0">
+      <title>ring-0</title>
+      <path id="svg_2" d="m-60.952,60.26401c15.526,15.53299 36.968,25.14999 60.614,25.14999l0,-35.858c-13.783,0 -26.261,-5.59 -35.299,-14.614l-25.315,25.32201z" fill="#FFFFFF"/>
+      <path id="svg_3" d="m-86.102,-0.35001c0,12.27901 2.616,23.95201 7.27399,34.52l32.80301,-14.42799c-2.709,-6.14301 -4.21901,-12.931 -4.21901,-20.09201c0,-27.56499 22.341,-49.91199 49.912,-49.91199l0,-35.85101c-47.28999,0 -85.77,38.473 -85.77,85.76299z" class="dark" fill="#F38B00"/>
+      <path id="svg_4" d="m30.75999,-80.27l-13.00299,33.42199c10.621,4.13901 19.47899,11.78601 25.12199,21.54201l38.832,0c-7.66599,-25.16901 -26.62599,-45.467 -50.951,-54.964z" fill="#FFFFFF"/>
+      <path id="svg_5" d="m17.763,46.149l13.004,33.42101c24.311,-9.496 43.27802,-29.79401 50.944,-54.97l-38.832,0c-5.64301,9.763 -14.50099,17.40999 -25.116,21.549z" class="dark" fill="#F38B00"/>
+     </g>
+    </svg>
           </section>
       </div>
     </div>

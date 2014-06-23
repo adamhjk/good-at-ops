@@ -1,0 +1,121 @@
+@-webkit-keyframes x {
+  0% {
+    -webkit-transform: rotateX(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotateX(360deg);
+  }
+}
+@-webkit-keyframes y {
+  0% {
+    -webkit-transform: rotateY(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotateY(360deg);
+  }
+}
+@-webkit-keyframes z {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotateZ(360deg);
+  }
+}
+@keyframes x {
+  0% {
+    transform: rotateX(0deg);
+  }
+
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+@keyframes y {
+  0% {
+    transform: rotateY(0deg);
+  }
+
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+@keyframes z {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+.logo {
+  font-size: 0;
+  line-height: 0;
+  width: 300px;
+  height: 300px;
+  white-space: nowrap;
+  margin: auto;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  overflow: hidden;
+}
+
+.logo-gray path {
+  fill: #DDD;
+}
+.logo-gray path.dark {
+  fill: #AAA;
+}
+
+.logo-animate .ring-0 {
+  -webkit-animation-name: z;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: z;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+.logo-animate .ring-1 {
+  -webkit-animation-name: x;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: x;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  -webkit-animation-duration: 2.5s;
+  animation-duration: 2.5s;
+}
+.logo-animate .ring-2 {
+  -webkit-animation-name: y;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: y;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  -webkit-animation-duration: 2.5s;
+  animation-duration: 2.5s;
+}
+.logo-animate .ring-3 {
+  -webkit-animation-name: x;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: x;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  -webkit-animation-duration: 2.5s;
+  animation-duration: 2.5s;
+}
