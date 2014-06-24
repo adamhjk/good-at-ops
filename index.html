@@ -88,27 +88,27 @@
           </section>
 
           <section>
-            <section>
-              <h1>What is Operations?</h1>
-              <h3>By which we mean <i>technical</i> operations</h3>
-              <blockquote>
-                The work of building and maintaining computer systems, networks, and applications.
-              </blockquote>
-              <aside class="notes">
-                <ul>
-                  <li>The definition covers everyone</li>
-                  <li>This is why "devops" is obvious and the new normal</li>
-                </ul>
-              </aside>
-            </section>
+            <h1>What is Operations?</h1>
+            <h3>By which we mean <i>technical</i> operations</h3>
+            <blockquote>
+              The work of building and maintaining computer systems, networks, and applications.
+            </blockquote>
+            <aside class="notes">
+              <ul>
+                <li>The definition covers everyone</li>
+                <li>This is why "devops" is obvious and the new normal</li>
+              </ul>
+            </aside>
+          </section>
 
             <section>
               <h1>How to be good at Operations</h1>
+              <p>Design to improve the <span style="color:#a6cee3">safety</span>, <span style="color:#fb9a99">contentment</span>, <span style="color:#ffff99">knowledge</span> and <span style="color:#cab2d6">freedom</span> of your colleagues and users.</p>
               <p>Focus on improving <span style="color:#7fc97f">availability</span> through reducing MTTD, MTTR and MTBF.</p>
-              <p>Improve the organizations <span style="color:#fdc086">efficiency</span> through improvements in People, Process and Technology</p>
-              <p>Design to improve the <span style="color:#a6cee3">safety</span>, <span style="color:#fb9a99">contentment</span>, <span style="color:#ffff99">knowledge</span> and <span style="color:#cab2d6">freedom</span> of your colleagues and users</p>
+              <p>Improve the organizations <span style="color:#fdc086">efficiency</span> through improvements in People, Process and Technology.</p>
             </section>
 
+          <section>
             <section>
               <h2>Done well, Operations enhances the <span style="color:#7fc97f">safety</span>, <span style="color:#beaed4">contentment</span>, <span style="color:#fdc086">knowledge</span> and <span style="color:#ffff99">freedom</span> of both the authors and users of the system.</h2>
               <aside class="notes">
@@ -198,77 +198,6 @@
               </section>
           </section>
           <section>
-            <section>
-              <img src="images/this_tall.jpg" alt="Prerequisites" width="100%"/>
-              <small>
-                <a href="https://flic.kr/p/3WtNGS">Original Photo</a>
-              </small>
-            </section>
-            <section>
-                <h1>Computers</h1>
-                <img src="images/basic_computers.svg" alt="Basic Computers"/>
-                <small><a href="http://best-knowledge-of-computer.blogspot.com/2011/01/introduction-to-computers.html">Original summary</a></small>
-            </section>
-            <section data-background="/images/burrito.jpg">
-                <h1>Networking</h1>
-                <img src="images/basic_networks.svg" alt="Basic Networking"/>
-                <p>
-                  <small><a href="https://flic.kr/p/CiLAk">Original burrito</a></small>
-                </p>
-            </section>
-            <section>
-              <h1>Learn to Type</h1>
-              <p>Literally everything we do is typing.</p>
-                <pre><code class="erlang">
-                    -module(productivity).
-                    -export([evaluate/2]).
-
-                    evaluate(Me, You) ->
-                      Me / You.
-
-                    % Call me!
-                    productivity:evaluate(120, 30).
-                    > 4.0
-                  </code>
-                </pre>
-            </section>
-            <section>
-              <h1>50 WPM</h1>
-              <h3>Is the minimum goal</h3>
-              <p>Just be average!</p>
-            </section>
-            <section>
-              <h1>Learn an Editor</h1>
-              <ol>
-                <li>Open a file without a finder/terminal</li>
-                <li>Syntax highlighting</li>
-                <li>Line numbering</li>
-                <li>Find and Replace</li>
-              </ol>
-              <img src="images/editor.png" width=600 alt="editor"/>
-            </section>
-            <section>
-              <h1>Know your purpose</h1>
-              <ol>
-                <li> What is the mission? </li>
-                <li> How does your organization intend to fulfill it? </li>
-                <li> How do you contribute? </li>
-                <li> What are the stakes? </li>
-              </ol>
-            </section>
-            <section>
-              <h1>Know the people</h1>
-              <ol>
-                <li> Software Developers </li>
-                <li> Business Decision Makers </li>
-                <li> Systems and Network Administrators </li>
-                <li> Marketing and PR </li>
-                <li> Sales </li>
-                <li> Legal </li>
-              </ol>
-            </section>
-          </section>
-          <section>
             <section data-background="/images/operations.png">
               <h1>Being good at Operations</h1>
               Means being good at two things
@@ -283,11 +212,23 @@
               <p>
               Make the effort required to do work <span style="color:#00FF00">easier</span>.
               </p>
+              <aside class="notes">
+                <ul>
+                  <li>The work here is building and maintaining computers, networks, and applications</li>
+                  <li>So efficiently doing that covers damn near everything</li>
+                </ul>
+              </aside>
             </section>
             <section>
             <h1>Focus on Availability</h1>
             <hr/>
             <h1>Efficiency Follows</h1>
+              <aside class="notes">
+              <ul>
+                <li>Availability shows where you need to be most efficient <b>now</b></li>
+                <li>It's a virtuous cycle</li>
+              </ul>
+              </aside>
             </section>
           </section>
 
@@ -297,11 +238,17 @@
               $$Availability = \frac{Uptime}{(Uptime + Downtime)}$$
               <small>
                 Much thanks to <a href="http://twitter.com/postwait">Theo Schlossnagle</a>, <a href="http://twitter.com/allspaw">John Allspaw</a>, <a href="http://twitter.com/patrickdebois">Patrick Debois</a>, and others for informing
-                much of this section.
+                much of this section. Mistakes are mine.
               </small>
               </section>
             <section>
               <h1>Availability is everybody's problem</h1>
+              <aside class="notes">
+                <ul>
+                  <li>There is no team that owns availability - other than the company itself</li>
+                  <li>The problems are too big</li>
+                </ul>
+              </aside>
             </section>
             <section>
               <h1>The 9's</h1>
@@ -335,22 +282,36 @@
                   </tr>
                 </tbody>
               </table>
+              <aside class="notes">
+                <ul>
+                  <li>The difference in magnitude matters - days, hours, half hours, minutes, seconds</li>
+                  <li>To achieve higher levels, everything has to get more precise</li>
+                  <li>Know your target, and communicate it</li>
+                  <li>It probably isn't five nines</li>
+                </ul>
+              </aside>
             </section>
             <section>
               <h1>The M's</h1>
               <ul>
-                <li><span class="fragment highlight-current-green">Mean Time To Failure (MTTF)</span>
+                <li><span class="fragment highlight-current-green">Mean Time To Failure (MTTF) ↑</span>
                 <br>The average time there is correct behavior</br></li>
-                <li><span class="fragment highlight-current-green">Mean Time To Diagnose (MTTD)</span>
+                <li><span class="fragment highlight-current-green">Mean Time To Diagnose (MTTD) ↓</span>
                   <br>The average time it takes to diagnose the problem</br>
                 </li>
-                <li><span class="fragment highlight-current-green">Mean Time To Repair (MTTR)</span>
+                <li><span class="fragment highlight-current-green">Mean Time To Repair (MTTR) ↓</span>
                 <br>The average time it takes to fix a problem</br>
                 </li>
-                <li><span class="fragment highlight-current-green">Mean Time Between Failures (MTBF)</span>
+                <li><span class="fragment highlight-current-green">Mean Time Between Failures (MTBF) ↑</span>
                 <br>The average time between failures</br></li>
               </ul>
               <img src="images/the_m_s.svg" alt="The M*s"/>
+              <aside class="notes">
+                <ul>
+                  <li>We want to decrease MTTD and MTTR</li>
+                  <li>And increase MTTF and MTBF</li>
+                </ul>
+              </aside>
             </section>
             <section>
               <h1>Focus your efforts</h1>
@@ -360,7 +321,31 @@
               <p>
                 Failure is <span style="color:#f03b20">inevitable</span> - it's how you detect and react that matter most to availability.
               </p>
-            </section>
+              <aside class="notes">
+                <ul>
+                  <li>All systems fail</li>
+                  <li>Fear of failure is the greatest killer of availability</li>
+                </ul>
+              </aside>
+              </section>
+              <section>
+                <h1>Slow and ponderous</h1>
+                <hr/>
+                <h1>Fast and nimble</h1>
+              <aside class="notes">
+                <ul>
+                  <li>Online banking is a huge thing for consumer banks</li>
+                  <li>I met with one that has 5 9's of availability</li>
+                  <li>They achieved this through changing the website once ever 6 months</li>
+                  <li>After a torture chamber of hate and pain</li>
+                  <li>They were not better at diagnose and repair - they were good at MTBF, and lucky</li>
+                  <li>Contrast that with a more nimble org, who might have more frequent outages (say scheduled maintenance once a week)</li>
+                  <li>But the system improves week over week</li>
+                  <li>Raise your hand which one you want!</li>
+                  <li>It's safer, increases human contentment, is easier to reason about, and frees people up</li>
+                </ul>
+              </aside>
+              </section>
             <section>
               <h1>Diagnose</h1>
               <h3>Metrics Collection</h3>
@@ -368,7 +353,13 @@
               <span style="color:#fdcdac">network</span>, and <span style="color:#cbd5e8">applications</span>.</p>
               <p>High <span style="color:#fdae6b">resolution matters</span>!</p>
               <p>As few systems as possible.</p>
-              </section>
+              <aside class="notes">
+                <ul>
+                  <li>You can't fix what you can't see</li>
+                  <li>Metrics resolution has direct impact on MTTD</li>
+                </ul>
+              </aside>
+            </section>
             <section>
               <h1>Diagnose</h1>
               <h3>Two Critical Metrics</h3>
@@ -376,6 +367,14 @@
                 <li> <span style="color:#fbcdac">Is it up</span> - from a users perspective </li>
                 <li> <span style="color:#b3e2cd">Is it making money</span> </li>
               </ol>
+              <aside class="notes">
+                <ul>
+                  <li>One binary metric - can your users use your stuff</li>
+                  <li>Money is often a trailing indicator of deeper systemic problems that are hard to see</li>
+                  <li>I helped run an ad network back in the day, and the hour-by-hour money graph was the fastest way to see if we were letting people run over cap</li>
+                  <li>Money graph also helps you justify other activity!</li>
+                </ul>
+              </aside>
             </section>
 
             <section>
@@ -388,6 +387,22 @@
                 <a href="http://omniti.com/seeds/dissecting-todays-internet-traffic-spikes">Graphs taken from Theo Schlossnagle and OmniTI</a>
               </small>
               </p>
+              <aside class="notes">
+                <ul>
+                  <li>Lets say this is puppy.com - the prime source for puppy news</li>
+                  <li>Nice, easy content day - 70% utilization, smooth peaks and valleys</li>
+                </ul>
+              </aside>
+            </section>
+            <section>
+              <img src="images/doge.jpg" width="200px"/>
+              <img src="images/taco-bell.jpeg" width="270px"/>
+              <aside class="notes">
+                <ul>
+                  <li>The Doge dog beats up the taco bell chihuahua outside the most posh dog park in LA</li>
+                  <li>Puppy.com has the exclusive video</li>
+                </ul>
+              </aside>
             </section>
             <section>
               <h1>Diagnose</h1>
@@ -398,7 +413,48 @@
                 <a href="http://omniti.com/seeds/dissecting-todays-internet-traffic-spikes">Graphs taken from Theo Schlossnagle and OmniTI</a>
               </small>
               </p>
+              <aside class="notes">
+                <ul>
+                  <li>The new york times picks it up, and adds long exposure traffic</li>
+                  <li>Digg shows up, and it goes to 11</li>
+                  <li>Happens in 60 seconds!</li>
+                </ul>
+              </aside>
             </section>
+            <section>
+              <h1>Auto Scaling Will Not Save You</h1>
+              <aside class="notes">
+                <ul>
+                  <li>Either you design for this load, or you fail to meet the expectations</li>
+                  <li>The right answer here is serve puppy.com from behind fast.ly :)</li>
+                </ul>
+              </aside>
+            </section>
+            <section>
+            <h1>Capacity Planning</h1>
+            <ol>
+              <li>Identify key metrics</li>
+              <li>Put them on a graph</li>
+              <li>Set a limit</li>
+              <li>Plot a trend line</li>
+              <li>Expand your time horizon</li>
+            </ol>
+            <p>
+              Do this on a regular cadence - monthly, etc.
+            </p>
+            </section>
+            <section>
+            <h1>Capacity Planning</h1>
+            <img src="images/linear-regression.png" alt="linear regression"/>
+              <aside class="notes">
+                <ul>
+                  <li>Show your R-squared - think of it as a confidence number</li>
+                  <li>This could be any metric that matters for your system</li>
+                  <li>This is the number one source of trivially preventable outages</li>
+                </ul>
+              </aside>
+            </section>
+
             <section>
               <h1>Diagnose</h1>
               <h3>Alerts</h3>
@@ -409,6 +465,12 @@
                 <li>Start with the <b>is it up</b> alert</li>
                 <li>Never create an alert that isn't actionable!</li>
               </ul>
+              <aside class="notes">
+              <ul>
+                <li>There is nothing more disrespectful than waking someone up for shit they can't fix</li>
+                <li>It's happening.. its happening... again</li>
+              </ul>
+              </aside>
             </section>
             <section data-background="images/f15.jpg">
               <h1>Repair</h1>
@@ -423,6 +485,13 @@
                 <li> Act: implement your decision.</li>
               </ol>
               <small><a href="https://flic.kr/p/84f5uq">Original Image</a></small>
+              <aside class="notes">
+              <ul>
+                <li>Originally for fighter pilots to get inside the heads of the enemy</li>
+                <li>A faster loop means success in combat</li>
+                <li>This is the same pattern for responding to operations availability issues</li>
+              </ul>
+              </aside>
             </section>
             <section>
               <h1>Repair</h1>
@@ -439,6 +508,16 @@
               <p>
               <a href="http://www.informit.com/articles/article.aspx?p=1941206">What Rob Pike learned from Ken Thompson</a>
               </p>
+              <aside class="notes">
+              <ul>
+                <li>In fighter jets, knowing typical behavior, jets, and culture was crucial</li>
+                <li>Rob Pike and Ken Thompson working on a visual language</li>
+                <li>Rob typed faster, so he was at the keyboard</li>
+                <li>Rob attacked bugs, Ken thought about it</li>
+                <li>Ken was <b>orienting</b> better</li>
+                <li>Unlike a fighter jet, he had time :)</li>
+              </ul>
+              </aside>
             </section>
             <section>
               <h1>Repair</h1>
@@ -460,7 +539,14 @@
                 <small>
                   This isn't always true in real Incident Command, but go with it.
                 </small>
-              </p>
+                </p>
+              <aside class="notes">
+              <ul>
+                <li>When it gets bigger than one person can handle, we flip to this</li>
+                <li>Knowing we have a process and command structure makes it easier to OODA</li>
+                <li>And faster loops means faster resolution</li>
+              </ul>
+              </aside>
             </section>
             <section>
               <h1>Learn</h1>
@@ -477,6 +563,11 @@
                     <li> Improve Mean Time To Diagnose </li>
                     <li> Improve Mean Time To Repair </li>
                   </ul>
+              <aside class="notes">
+              <ul>
+                <li>This should be the IC at the end of the incident</li>
+              </ul>
+              </aside>
             </section>
             <section>
             <blockquote>
@@ -503,26 +594,29 @@ creates safety. Moreover, <span style="color:#fbcdac;">punishment emphasizes tha
                 <li> Describe remediation tasks for the root cause</li>
                 <li> Describe improvement tasks for response process</li>
               </ol>
+              <aside class="notes">
+              <ul>
+                <li>We hold post mortems to learn and improve, not to blame and punish</li>
+                <li>Puppys.com went down when Digg linked to the Doge/Chihuaua story</li>
+                <li>The traffic load overwhelmed mpm worker apache configuration, and exhausted capacity</li>
+                <li>Story gets posted at 8am PST, NYT picks it up at 8:15am PST, Digg posts at 8:30am PST</li>
+                <li>Site goes down at 8:30am, alert at 8:31am, diagnosed at 8:50am, more capacity launched on ec2 at 8:55am, online and resolved at 9:00am PST</li>
+                <li>People could not watch the doge dog crush the chihuaha, and click ads</li>
+                <li>Launched more capacity. Long term remediation is to move static content to a CDN</li>
+                <li>We investigated a denial of service and backend database issues before we looked at traffic graphs. Add passive alert on traffic.</li>
+              </ul>
+              </aside>
+
             </section>
             <section>
               <h1>Prioritize the outcomes</h1>
-            </section>
-            <section>
-            <h1>Capacity Planning</h1>
-            <ol>
-              <li>Identify key metrics</li>
-              <li>Put them on a graph</li>
-              <li>Set a limit</li>
-              <li>Plot a trend line</li>
-              <li>Expand your time horizon</li>
-            </ol>
-            <p>
-              Do this on a regular cadence - monthly, etc.
-            </p>
-            </section>
-            <section>
-            <h1>Capacity Planning</h1>
-            <img src="images/linear-regression.png" alt="linear regression"/>
+              <aside class="notes">
+                <ul>
+                  <li>The process works because you prioritize the outcomes</li>
+                  <li>Our remediation steps are the <b>efficiency improvements you want</b></li>
+                  <li>If you fail to act, or do other stuff, you're wasting the opportunity</li>
+                </ul>
+              </aside>
             </section>
             <section>
             <h1>Availability Roundup</h1>
@@ -530,9 +624,10 @@ creates safety. Moreover, <span style="color:#fbcdac;">punishment emphasizes tha
               <li>Understand your Availability Targets</li>
               <li>Track and understand your M*'s</li>
               <li>Reduce time to detect and repair</li>
+              <li>Use capacity planning to avoid obvious incidents</li>
               <li>Have an incident response and command process</li>
               <li>Perform and publish post-mortems for every incident</li>
-              <li>Use capacity planning to avoid obvious incidents</li>
+              <li>Prioritize the outcomes</li>
             </ul>
             </section>
           </section>
@@ -542,7 +637,7 @@ creates safety. Moreover, <span style="color:#fbcdac;">punishment emphasizes tha
               <h1>Efficiency</h1>
               $$Efficiency = \frac{Output}{Effort}$$
               <p>
-              Make the effort required to do the work smaller.
+              Make the effort required to do work <span style="color:#00FF00">easier</span>.
               </p>
             </section>
             <section>
@@ -551,20 +646,72 @@ creates safety. Moreover, <span style="color:#fbcdac;">punishment emphasizes tha
             <h1>Process</h1>
             <hr/>
             <h1>Technology</h1>
+            <aside class="notes">
+              <ul>
+                <li>3 areas for efficiency, in order or most potential for gains</li>
+                <li>Think about Puppy's dot com - if we didn't have the right people, if we didn't have a process for incidents, if we didn't have post mortems, the technology fixes wouldn't make a dent long term</li>
+              </ul>
+            </aside>
             </section>
             <section>
-            <h1>People are #1</h1>
-            <blockquote>
-            When they create electronic devices, they can reflect on
-            whether that new product will take people away from themselves,
-            their family and nature. Instead they can create the kind of
-            devices and software that can help them go back to themselves, to
-            take care of their feelings. By doing that, they will feel good
-            because they’re doing something good for society.
-            <br/>
-            - Thich Naht Hanh at Google
-          </blockquote>
+              <h1>Know your purpose</h1>
+              <ol>
+                <li> What is the mission? </li>
+                <li> How does your organization intend to fulfill it? </li>
+                <li> How do you contribute? </li>
+                <li> What are the stakes? </li>
+              </ol>
+              <aside class="notes">
+                <ul>
+                  <li> Knowing your purpose enables you to put decisions in context </li>
+                  <li> The more context you have, the better your decision will be </li>
+                  <li> Like a very long OODA loop </li>
+                </ul>
+              </aside>
             </section>
+            <section>
+              <h1>Know the people</h1>
+              <ol>
+                <li> Software Developers </li>
+                <li> Business Decision Makers </li>
+                <li> Systems and Network Administrators </li>
+                <li> Marketing and PR </li>
+                <li> Sales </li>
+                <li> Legal </li>
+              </ol>
+              <aside class="notes">
+                <ul>
+                  <li> Trust is crucial to effective operations </li>
+                  <li> Knowing people is crucial to trusting them </li>
+                  <li> Set up lunch dates </li>
+                  <li> Talk about your lives </li>
+                  <li> <b>THIS IS WHERE DEVOPS COMES FROM</b></li>
+                  <li> John Allspaw and Paul Hammond are <b>friends</b></li>
+                </ul>
+              </aside>
+            </section>
+            <section>
+                <img alt="Thich Naht Hanh" src="images/Thich-Nhat-Hanh.jpg" width="200px"/>
+                <blockquote>
+                  When they create electronic devices, they can reflect on
+                  whether that new product will take people away from themselves,
+                  their family and nature. Instead they can create the kind of
+                  devices and software that can help them go back to themselves, to
+                  take care of their feelings. By doing that, they will feel good
+                  because they’re doing something good for society.
+                  <br/>
+                  - Thich Naht Hanh at Google
+                </blockquote>
+                <aside class="notes">
+                <ul>
+                  <li> The way we do our work informs our lives </li>
+                  <li> Having good lives improves the quality of our work in every dimension </li>
+                  <li> We are blessed to be the architects of our environment </li>
+                  <li> Lets back Thay up with data </li>
+                </ul>
+                </aside>
+          </section>
+
             <section>
               <h1>People</h1>
               <h2>Engaged Workers Rule</h2>
@@ -574,6 +721,16 @@ creates safety. Moreover, <span style="color:#fbcdac;">punishment emphasizes tha
                 <a href="http://www.gallup.com/strategicconsulting/163007/state-american-workplace.aspx">Gallup's state of the American Workplace</a>
                 with causality evidence from <a href="http://pps.sagepub.com/content/5/4/378">Causal Impact of Employee Work Perceptions on the Bottom Line of Organizations</a>.
               </small>
+                <aside class="notes">
+                <ul>
+                  <li>Gallup has been running this study since the 90s</li>
+                  <li>They have proven the impact engaged workers have is causul</li>
+                  <li>What other single thing could you possibly do that has a 22% impact on profitability?</li>
+                  <li>Or a 41% impact on defects! Happy people care about their work more</li>
+                  <li>It's the most critical operations efficiency task</li>
+                </ul>
+                </aside>
+
             </section>
             <section>
               <h1>Sources of Engagement</h1>
@@ -586,8 +743,15 @@ creates safety. Moreover, <span style="color:#fbcdac;">punishment emphasizes tha
                 <li>A mission that makes you feel important</li>
                 <li>Commitment to quality</li>
               </ol>
+              <aside class="notes">
+              <ul>
+                <li>Repetition, Repetition, Repetition</li>
+                <li>Training people is like training cats - you gotta be on that</li>
+              </ul>
+              </aside>
             </section>
-            <section>
+            <section data-background="images/chronic.jpg">
+            <div style="background-color:#000000; opacity:0.90;">
               <h1>Assholes</h1>
               <h3>Know you an Asshole</h3>
               <ol>
@@ -598,6 +762,12 @@ creates safety. Moreover, <span style="color:#fbcdac;">punishment emphasizes tha
               <small>
                 Sections on Assholes taken from <a href="http://smile.amazon.com/Asshole-Rule-Civilized-Workplace-Surviving-ebook">The No Asshole Rule</a>.
               </small>
+              <aside class="notes">
+                <ul>
+                  <li> Not talking about a bad day - these poeple are out to undo all the good engaged people do</li>
+                </ul>
+              </aside>
+            </div>
             </section>
             <section>
               <h1>Assholes are inefficient</h1>
@@ -607,6 +777,12 @@ creates safety. Moreover, <span style="color:#fbcdac;">punishment emphasizes tha
                   Findings found in <a href="http://liberalorder.typepad.com/the_liberal_order/files/bad_apples_rob.pdf">How, when, and why bad apples spoil the barrel:
                     Negative group members and dysfunctional groups.</a>
                 </small>
+              <aside class="notes">
+                <ul>
+                  <li>Pick someone out, insult them gently, then compliment them</li>
+                  <li>Point out this is what they will remember from this talk, forever</li>
+                </ul>
+              </aside>
             </section>
             <section>
               <h1>What you can do</h1>
@@ -655,6 +831,15 @@ creates safety. Moreover, <span style="color:#fbcdac;">punishment emphasizes tha
               <h2>Radical Change</h2>
               <p>Recognize when desired results are beyond incremental improvement.</p>
               <p>Start fresh, incorporate a new process, then do Kaizen</p>
+              <aside class="notes">
+              <ul>
+                <li>Continuous Delivery is a good example</li>
+                <li>If you are a big, waterfall org with manual testing</li>
+                <li>Incrementally moving to CD is going to fail</li>
+                <li>You need to blow up the way you work, learn how that feels, and kaizen your way to happiness</li>
+                <li>A house built on sand and all that</li>
+              </ul>
+              </aside>
             </section>
             <section>
               <h1>Technology</h1>
@@ -664,17 +849,39 @@ creates safety. Moreover, <span style="color:#fbcdac;">punishment emphasizes tha
               <img src="images/org_sucks.png" height="300" alt="This Org Sucks"/>
               </p>
               Do not mistake existing implementations for hard requirements
+              <aside class="notes">
+              <ul>
+                <li>Big retailers web division, wanted to automate, I wanted to sell software</li>
+                <li>Asked how they felt about Cd, said they weren't CD people</li>
+                <li>I was like: Me neither! ;)</li>
+                <li>They told me their design, said "then we come together and make it work"</li>
+                <li>We rebuilt it in that room, much better - not real requirements</li>
+              </ul>
+              </aside>
+
             </section>
             <section>
             <h1>Scalable Systems Design</h1>
             <p>$$People + Systems$$</p>
             <p>Complexity: something is complex when it has many parts</p>
-            <p>Complicated: something is complicated when it has a high degree of difficulty</p>
+            <p>Complicated: something is complicated when it has a high degree of difficulty (coordination, for example)</p>
             <p>Often we can reduce complication, but not complexity</p>
+            <aside class="notes">
+              <ul>
+                <li>Complexity == number of things</li>
+                <li>Complicated == degree of difficulty</li>
+              </ul>
+            </aside>
             </section>
             <section>
               <h1>Rolling Upgrade</h1>
               <img src="images/lb-example.svg" alt="Load Balanced Web Service"/>
+              <aside class="notes">
+              <ul>
+                <li>Traditional web servers behind a load balancer</li>
+                <li>Upgrade servers one at a time</li>
+              </ul>
+              </aside>
             </section>
             <section>
               <img src="images/lb-example.svg" alt="Load Balanced Web Service"/>
@@ -688,6 +895,13 @@ creates safety. Moreover, <span style="color:#fbcdac;">punishment emphasizes tha
               <small>
                 What happens if a server is down? What happens to traffic in transit? What if we die in the middle?
               </small>
+              <aside class="notes">
+              <ul>
+                <li>This is what you would do if you wrote the steps down!</li>
+                <li>And it's whats going to happen in any case</li>
+                <li>But linearly implementing these as a script - whoa doggies</li>
+              </ul>
+              </aside>
             </section>
             <section>
               <h1>Autonomous Actors</h1>
@@ -711,11 +925,25 @@ creates safety. Moreover, <span style="color:#fbcdac;">punishment emphasizes tha
               <ol>
                 <li>Update software on App1</li>
               </ol>
+              <aside class="notes">
+              <ul>
+                <li>Add a service that is smart about the apps status to each server</li>
+                <li>Monitor that service with the load balancer</li>
+                <li>Upgrade process manages that services response</li>
+                <li>Load balancer just blindly routes traffic</li>
+              </ul>
+              </aside>
             </section>
             <section>
               <h1>Complexity/Complicated</h1>
               <p>The better solution is less <span style="color:#7fc97f">complicated</span>.</p>
               <p>It has the same inherit <span style="color:#beaed4">complexity</span>.</p>
+              <aside class="notes">
+              <ul>
+                <li>We reduced the degree of diffiuclty in the process</li>
+                <li>Still the same number of moving parts</li>
+              </ul>
+              </aside>
             </section>
             <section>
             <h1>It also improves</h1>
@@ -739,14 +967,13 @@ creates safety. Moreover, <span style="color:#fbcdac;">punishment emphasizes tha
                 <li>Use Scalable Systems Design to improve your technology and automation</li>
               </ul>
             </section>
-
           </section>
 
           <section>
             <h1>How to be good at Operations</h1>
+            <p>Design to improve the <span style="color:#a6cee3">safety</span>, <span style="color:#fb9a99">contentment</span>, <span style="color:#ffff99">knowledge</span> and <span style="color:#cab2d6">freedom</span> of your colleagues and users.</p>
             <p>Focus on improving <span style="color:#7fc97f">availability</span> through reducing MTTD, MTTR and MTBF.</p>
-            <p>Improve the organizations <span style="color:#fdc086">efficiency</span> through improvements in People, Process and Technology</p>
-            <p>Design to improve the <span style="color:#a6cee3">safety</span>, <span style="color:#fb9a99">contentment</span>, <span style="color:#ffff99">knowledge</span> and <span style="color:#cab2d6">freedom</span> of your colleagues and users</p>
+            <p>Improve the organizations <span style="color:#fdc086">efficiency</span> through improvements in People, Process and Technology.</p>
           </section>
 
           <section>
