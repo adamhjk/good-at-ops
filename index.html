@@ -87,12 +87,17 @@
             </aside>
           </section>
 
-          <section>
+          <section data-background="images/operations.jpg">
+          <div style="background-color:#000000; opacity: 0.9;">
             <h1>What is Operations?</h1>
             <h3>By which we mean <i>technical</i> operations</h3>
             <blockquote>
               The work of building and maintaining computer systems, networks, and applications.
             </blockquote>
+            <small>
+              <a href="https://flic.kr/p/7WWtVV">Original Image</a>
+            </small>
+          </div>
             <aside class="notes">
               <ul>
                 <li>The definition covers everyone</li>
@@ -104,8 +109,8 @@
             <section>
               <h1>How to be good at Operations</h1>
               <p>Design to improve the <span style="color:#a6cee3">safety</span>, <span style="color:#fb9a99">contentment</span>, <span style="color:#ffff99">knowledge</span> and <span style="color:#cab2d6">freedom</span> of your colleagues and users.</p>
-              <p>Focus on improving <span style="color:#7fc97f">availability</span> through reducing MTTD, MTTR and MTBF.</p>
-              <p>Improve the organizations <span style="color:#fdc086">efficiency</span> through improvements in People, Process and Technology.</p>
+              <p>Focus on improving <span style="color:#7fc97f">availability</span> through reducing MTTD and MTTR.</p>
+              <p>Improve the organizations <span style="color:#fdc086">efficiency</span> through improvements in People, Process, and Technology.</p>
             </section>
 
           <section>
@@ -205,7 +210,7 @@
             <section>
               <h1>Availability</h1>
               <p>
-              Is the system down? <span style="color:#FF0000;">Bring it up</span>.
+              Is the system down? <span style="color:#00FFFF;">Bring it up</span>.
               </p>
               <hr/>
               <h1>Efficiency</h1>
@@ -422,7 +427,7 @@
               </aside>
             </section>
             <section>
-              <h1>Auto Scaling Will Not Save You</h1>
+              <h1>Auto-Scaling Will Not Save You</h1>
               <aside class="notes">
                 <ul>
                   <li>Either you design for this load, or you fail to meet the expectations</li>
@@ -478,12 +483,6 @@
               <p>
               <img src="images/ooda.svg" alt="ooda"/>
               </p>
-              <ol>
-                <li> Observe: what is going on. </li>
-                <li> Orient: put what is happening in context. </li>
-                <li> Decide: what to do.</li>
-                <li> Act: implement your decision.</li>
-              </ol>
               <small><a href="https://flic.kr/p/84f5uq">Original Image</a></small>
               <aside class="notes">
               <ul>
@@ -543,7 +542,7 @@
               <aside class="notes">
               <ul>
                 <li>When it gets bigger than one person can handle, we flip to this</li>
-                <li>Knowing we have a process and command structure makes it easier to OODA</li>
+                <li>Knowing we have a Process, and command structure makes it easier to OODA</li>
                 <li>And faster loops means faster resolution</li>
               </ul>
               </aside>
@@ -588,8 +587,8 @@ creates safety. Moreover, <span style="color:#fbcdac;">punishment emphasizes tha
               <ol>
                 <li> Invoke the space: we are here to learn, not to blame </li>
                 <li> Describe the incident </li>
-                <li> Determine root cause </li>
                 <li> Establish the timeline </li>
+                <li> Identify contributing factors </li>
                 <li> Describe customer impact </li>
                 <li> Describe remediation tasks for the root cause</li>
                 <li> Describe improvement tasks for response process</li>
@@ -598,9 +597,9 @@ creates safety. Moreover, <span style="color:#fbcdac;">punishment emphasizes tha
               <ul>
                 <li>We hold post mortems to learn and improve, not to blame and punish</li>
                 <li>Puppys.com went down when Digg linked to the Doge/Chihuaua story</li>
-                <li>The traffic load overwhelmed mpm worker apache configuration, and exhausted capacity</li>
                 <li>Story gets posted at 8am PST, NYT picks it up at 8:15am PST, Digg posts at 8:30am PST</li>
                 <li>Site goes down at 8:30am, alert at 8:31am, diagnosed at 8:50am, more capacity launched on ec2 at 8:55am, online and resolved at 9:00am PST</li>
+                <li>The traffic load overwhelmed mpm worker apache configuration, and exhausted capacity</li>
                 <li>People could not watch the doge dog crush the chihuaha, and click ads</li>
                 <li>Launched more capacity. Long term remediation is to move static content to a CDN</li>
                 <li>We investigated a denial of service and backend database issues before we looked at traffic graphs. Add passive alert on traffic.</li>
@@ -726,6 +725,8 @@ creates safety. Moreover, <span style="color:#fbcdac;">punishment emphasizes tha
                   <li>Gallup has been running this study since the 90s</li>
                   <li>They have proven the impact engaged workers have is causul</li>
                   <li>What other single thing could you possibly do that has a 22% impact on profitability?</li>
+                  <li>21% impact on productivity!</li>
+                  <li>65% less turnover!</li>
                   <li>Or a 41% impact on defects! Happy people care about their work more</li>
                   <li>It's the most critical operations efficiency task</li>
                 </ul>
@@ -935,29 +936,30 @@ creates safety. Moreover, <span style="color:#fbcdac;">punishment emphasizes tha
               </aside>
             </section>
             <section>
-              <h1>Complexity/Complicated</h1>
+              <h1>Complexity<br/>Complicated</h1>
               <p>The better solution is less <span style="color:#7fc97f">complicated</span>.</p>
-              <p>It has the same inherit <span style="color:#beaed4">complexity</span>.</p>
+              <p>But it has more <span style="color:#beaed4">complexity</span>.</p>
               <aside class="notes">
               <ul>
-                <li>We reduced the degree of diffiuclty in the process</li>
+                <li>We reduced the degree of difficulty in the process</li>
                 <li>Still the same number of moving parts</li>
+                <li>Safety
+            Resilient against many more failure modes
+                </li>
+            <hr/>
+            <li>Knowledge
+            Far easier to reason about during Orient in the OODA loop
+                </li>
+            <hr/>
+            <li>Freedom
+            Pattern adapts to different values of "available" based on service needs
+                </li>
+            <hr/>
+            <li>Contentment
+            Safer, easier to reason about, and more flexible - that makes everyone content
+                </li>
               </ul>
               </aside>
-            </section>
-            <section>
-            <h1>It also improves</h1>
-            <h3>Safety</h3>
-            Resilient against many more failure modes
-            <hr/>
-            <h3>Knowledge</h3>
-            Far easier to reason about during Orient in the OODA loop
-            <hr/>
-            <h3>Freedom</h3>
-            Pattern adapts to different values of "available" based on service needs
-            <hr/>
-            <h3>Contentment</h3>
-            Safer, easier to reason about, and more flexible - that makes everyone content
             </section>
             <section>
               <h1>Efficiency Roundup</h1>
@@ -972,8 +974,8 @@ creates safety. Moreover, <span style="color:#fbcdac;">punishment emphasizes tha
           <section>
             <h1>How to be good at Operations</h1>
             <p>Design to improve the <span style="color:#a6cee3">safety</span>, <span style="color:#fb9a99">contentment</span>, <span style="color:#ffff99">knowledge</span> and <span style="color:#cab2d6">freedom</span> of your colleagues and users.</p>
-            <p>Focus on improving <span style="color:#7fc97f">availability</span> through reducing MTTD, MTTR and MTBF.</p>
-            <p>Improve the organizations <span style="color:#fdc086">efficiency</span> through improvements in People, Process and Technology.</p>
+            <p>Focus on improving <span style="color:#7fc97f">availability</span> through reducing MTTD and MTTR.</p>
+            <p>Improve the organizations <span style="color:#fdc086">efficiency</span> through improvements in People, Process, and Technology.</p>
           </section>
 
           <section>
